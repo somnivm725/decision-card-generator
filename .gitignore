@@ -1,0 +1,27 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary files
+temp_*
+*.temp
+*TEMP*
+
+# Output files
+output_video.mp4
+*.mp4
+*.m4a
+*.mp3
+*.png
+
+# Exceptions (if you want to track specific media files)
+# !important_video.mp4
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/

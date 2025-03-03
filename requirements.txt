@@ -1,0 +1,6 @@
+streamlit
+pillow>=9.0.0
+moviepy
+selenium
+numpy
+webdriver-manager

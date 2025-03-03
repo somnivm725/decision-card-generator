@@ -1,0 +1,89 @@
+{
+  "Sending your bro startup ideas instead of going out friday night is peak aura": {
+    "video_text": "Sending your bro startup ideas instead of going out friday night is peak aura",
+    "category": "Finance",
+    "title": "Startup ideas",
+    "description": "We gotta get out money up",
+    "choices": [
+      {
+        "name": "Etsy vids",
+        "pros": [
+          "can just rip them off insta",
+          "people are making bank"
+        ],
+        "cons": [
+          "might have copyright issues idk",
+          "half to do marketing still"
+        ]
+      },
+      {
+        "name": "Buy bitcoin",
+        "pros": [
+          "100x returns easyy",
+          "buy at bottom sell at top",
+          "proven strategies"
+        ],
+        "cons": [
+          "ATH or smth",
+          "need to get wallet set up"
+        ]
+      },
+      {
+        "name": "Dropshipping",
+        "pros": [
+          "easy to make AI vids for marketing",
+          "just need one post to blow up and we're rich"
+        ],
+        "cons": [
+          "saturated",
+          "Daddy trump put tarrifs on CHINA"
+        ]
+      }
+    ]
+  },
+  "When they all high key red flags but you're open-minded": {
+    "video_text": "When they all high key red flags but you're open-minded",
+    "category": "Relationships",
+    "title": "Picking guys",
+    "description": "",
+    "choices": [
+      {
+        "name": "Ryan",
+        "pros": [
+          "Works as a personal trainer so I get free gym",
+          "Always active on dates"
+        ],
+        "cons": [
+          "Obsessed with his gym selfies",
+          "\"Too busy\" during bulk szn??",
+          "Protein shakes are like his kids bro"
+        ]
+      },
+      {
+        "name": "Jake",
+        "pros": [
+          "Run his own startup, so ambitious",
+          "Sends me rly cute good morning texts💘",
+          "Loves travelling and trying new food places"
+        ],
+        "cons": [
+          "Never stops talking ab his app!!",
+          "Misses plans because he's \"working late\"",
+          "Thinks Bali is a personality"
+        ]
+      },
+      {
+        "name": "Trevor",
+        "pros": [
+          "Big gamer so always home",
+          "Sends top tier memess",
+          "Has a dog"
+        ],
+        "cons": [
+          "Still unemployed 'by choice'??",
+          "Plays video games all night instead of texting back"
+        ]
+      }
+    ]
+  }
+}
