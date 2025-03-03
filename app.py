@@ -489,7 +489,10 @@ def create_video(images, text, audio_file=None, bg_video=None):
         duration_per_image = 1.5
         images = images[:3]  # Limit to first 3 images
         width, height = 1080, 1920
-        total_duration = duration_per_image * len(images)
+        
+        # Loop through images twice
+        images_looped = images + images  # Duplicate the images list to show each card twice
+        total_duration = duration_per_image * len(images_looped)
         
         # Create background - either from video or black
         background = None
@@ -553,13 +556,16 @@ def create_video(images, text, audio_file=None, bg_video=None):
         image_clips = []
         
         # Process each choice to create a card
-        for idx, img in enumerate(images):
+        for idx, img in enumerate(images_looped):
+            # Determine the actual image index (for the second loop, we need to map back to original images)
+            original_idx = idx % len(images)
+            
             # Create a new HTML for this card
             card_html = create_card_html_body(
                 st.session_state.category,
                 st.session_state.title,
                 st.session_state.description,
-                st.session_state.choices[idx],
+                st.session_state.choices[original_idx],
                 st.session_state.choices
             )
             
@@ -664,7 +670,7 @@ def create_video(images, text, audio_file=None, bg_video=None):
             card_img = card_img.set_start(duration_per_image * idx)
             card_img = card_img.set_duration(duration_per_image)
             
-            # Add fade-in effect with delay for the first card
+            # Add fade-in effect with delay for the first card only
             if idx == 0:
                 # Add a 0.5 second delay before the first card appears
                 card_img = card_img.set_start(0.5)
@@ -734,7 +740,7 @@ def create_video(images, text, audio_file=None, bg_video=None):
         )
         
         # Clean up temporary files
-        for idx in range(len(images)):
+        for idx in range(len(images_looped)):
             temp_png_path = f"temp_card_{idx}.png"
             if os.path.exists(temp_png_path):
                 try:
